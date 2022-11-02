@@ -1,0 +1,98 @@
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+.card {
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(180deg, var(--Dark-Blue), var(--Very-Dark-Blue));
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: -3px 13px 16px -1px rgba(0, 0, 0, 0.25);
+}
+
+.star__desktop,
+.rate {
+  width: 50px;
+  height: 50px;
+  /* padding-bottom: 10px; */
+  border-radius: 50%;
+  background-color: var(--Dark-Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  padding: 25px 0 15px 0;
+}
+
+.text {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.rating {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.rate.clicked {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+
+.rate {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--Medium-Grey);
+  transition: all 0.2s ease-out;
+}
+
+.rate:hover {
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 30px;
+  background-color: var(--Orange);
+  color: var(--White);
+  border: none;
+  border-radius: 100px;
+  font-size: 18px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
