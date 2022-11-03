@@ -126,3 +126,15 @@ body {
   color: var(--Light-Grey);
   line-height: 25px;
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    max-width: 720px;
+  }
+
+  .card,
+  .thank__you {
+    width: 330px;
+    height: 450px;
+  }
+}

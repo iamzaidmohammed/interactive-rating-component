@@ -126,9 +126,7 @@ submitBtn.addEventListener("click", (e) => {
             break;
         }
       }
-      // console.log(result);
     }
-    console.log("it worked");
     rateCard.style.display = "none";
     thankYouCard.style.display = "block";
   }
