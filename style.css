@@ -22,8 +22,9 @@ body {
   place-content: center;
 }
 
-.card {
-  width: 400px;
+.card,
+.thank__you {
+  width: 420px;
   height: 400px;
   background: linear-gradient(180deg, var(--Dark-Blue), var(--Very-Dark-Blue));
   padding: 30px;
@@ -95,4 +96,33 @@ body {
 .btn:hover {
   background-color: var(--White);
   color: var(--Orange);
+}
+
+.thank__you {
+  text-align: center;
+  display: none;
+}
+
+.thank__you img {
+  padding-bottom: 30px;
+}
+
+.thank__you .out__of {
+  padding: 10px 25px;
+  width: fit-content;
+  margin: auto;
+  background-color: var(--Dark-Blue);
+  border-radius: 100px;
+  letter-spacing: 2px;
+  color: var(--Orange);
+}
+
+.thank__you .title {
+  padding: 30px 0;
+  font-size: 30px;
+}
+
+.thank__you .subtext {
+  color: var(--Light-Grey);
+  line-height: 25px;
 }

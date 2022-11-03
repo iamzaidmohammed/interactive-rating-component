@@ -20,7 +20,7 @@
   <body>
     <!-- Rating state start -->
 
-    <div class="card">
+    <div class="card" id="rate__card">
       <div class="star__desktop">
         <img src="./images/icon-star.svg" alt="Star icon" />
       </div>
@@ -39,17 +39,27 @@
         <div class="rate" id="rate5">5</div>
       </div>
 
-      <button class="btn">SUBMIT</button>
+      <button class="btn" id="btn">SUBMIT</button>
     </div>
 
     <!-- Rating state end -->
 
-    <!-- Add rating here -->
-    <!-- Thank you state start
+    <!-- Thank you state start -->
 
-    You selected
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
+    <div class="thank__you" id="thank__you__card">
+      <img
+        src="./images/illustration-thank-you.svg"
+        alt="Thanks you illustration"
+      />
+      <div class="out__of">
+        <p>You selected 4 out of 5</p>
+      </div>
+      <h2 class="title">Thank you!</h2>
+      <div class="subtext">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </div>
+    </div>
 
     <!-- Thank you state end -->
 
